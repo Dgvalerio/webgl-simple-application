@@ -1,10 +1,18 @@
 import React, { FC } from 'react';
 
+import { Container, Grid, Typography } from '@mui/material';
+
 const App: FC = () => {
   return (
-    <div className="App">
-      <h1>Projeto com WebGL</h1>
-    </div>
+    <Container>
+      <Grid container p={3}>
+        <Grid item xs={12}>
+          <Typography variant="h2" align="center">
+            Projeto com WebGL
+          </Typography>
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 
